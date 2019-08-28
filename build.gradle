@@ -24,7 +24,9 @@ repositories {
     maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
     mavenCentral()
 }
-
+test{
+	useJUnitPlatform()
+}
 
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
